@@ -29,6 +29,8 @@ public class RectangleArrayAssignment {
         System.out.println(array2[0][0]+" "+ array2[0][1]+ " " + array2[0][2]);
         System.out.println(array2[1][0]+" "+ array2[1][1]+ " " + array2[1][2]);
 
+        //방법3
+
     }
 
 }
