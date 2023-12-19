@@ -6,6 +6,5 @@ public class ArgumentOfMainMethod {
         System.out.println(args.length);//0 : 데이터가 없기 때문
 
 
-
     }
 }
