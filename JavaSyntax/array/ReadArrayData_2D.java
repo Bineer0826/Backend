@@ -1,4 +1,4 @@
-package array;
+package JavaSyntax.array;
 
 public class ReadArrayData_2D {
     public static void main(String[] args) {

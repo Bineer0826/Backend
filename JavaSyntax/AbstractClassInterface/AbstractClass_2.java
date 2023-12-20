@@ -1,4 +1,4 @@
-package AbstractClassInterface;
+package JavaSyntax.AbstractClassInterface;
 // 방법 2 : 익명이너클래스 사용
 
 abstract class C {

@@ -1,4 +1,4 @@
-package array;
+package JavaSyntax.array;
 
 public class ArgumentOfMainMethod {
     public static void main(String[] args) {

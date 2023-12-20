@@ -1,4 +1,4 @@
-package AbstractClassInterface;
+package JavaSyntax.AbstractClassInterface;
 
 interface F {}
 interface G {}

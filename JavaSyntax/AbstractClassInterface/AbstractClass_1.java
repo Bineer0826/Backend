@@ -1,4 +1,4 @@
-package AbstractClassInterface;
+package JavaSyntax.AbstractClassInterface;
 //추상클래스의 객체생성 방법
 //방법 1 : 자식클래스 생성해서 객체생성
 abstract class A {
