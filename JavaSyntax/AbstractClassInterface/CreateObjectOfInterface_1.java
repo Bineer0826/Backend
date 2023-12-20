@@ -18,5 +18,6 @@ public class CreateObjectOfInterface_1 {
 
         //메서드호출
         i.abc();
+        //test
     }
 }
