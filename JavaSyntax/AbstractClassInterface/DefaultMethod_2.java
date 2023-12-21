@@ -9,14 +9,16 @@ class TT implements MM {
 
     @Override
     public void abc() {
+        MM.super.abc();//TT에서 MM 메서드 호출
         System.out.println("TT클래스의 abc()");
 }
-public class DefaultMethod_2 {
+public static class DefaultMethod_2 {
     public static void main(String[] args) {
         //객체 생성
         TT t1 = new TT();
         //메서드 호출
-        t1.abc();//
+        t1.abc();//TT클래스가 나온다
+
     }
 }
 }
