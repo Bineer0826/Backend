@@ -79,17 +79,15 @@ mov		rbp, rsp
 
 #### CPU가 공통으로 이해하는 연산코드
 **데이터전송**
-	MOVE : 데이터를 옮기기
-	STORE : 메모리에 저장
-	LOAD(FETCH) : 메모리에서 CPU로 데이터 불러오기
-	PUSH : 스택에 데이터 저장
-	POP : 스택의 최상단 데이터 불러오기
+	- MOVE : 데이터를 옮기기
+	- STORE : 메모리에 저장
+	- LOAD(FETCH) : 메모리에서 CPU로 데이터 불러오기
+	- PUSH : 스택에 데이터 저장
+	- POP : 스택의 최상단 데이터 불러오기
 
  **산술/논리연산**
 	- ADD / SUBTRACT /  MULTIPLY / DIVIDE : 덧뺼곱나 해라
-	
 	- INCREMENT / DECREMENT : 오퍼랜드에 1을 더해라 / 빼라
-	
 	- AND / OR / NOT : and or not 연산실행
 	- COMPARE : 두개의 숫자 혹은 true/false를 비교
 
