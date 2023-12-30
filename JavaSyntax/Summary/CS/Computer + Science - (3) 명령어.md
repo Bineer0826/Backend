@@ -79,30 +79,30 @@ mov		rbp, rsp
 
 #### CPU가 공통으로 이해하는 연산코드
 **데이터전송**
-	- MOVE : 데이터를 옮기기
-	- STORE : 메모리에 저장
-	- LOAD(FETCH) : 메모리에서 CPU로 데이터 불러오기
-	- PUSH : 스택에 데이터 저장
-	- POP : 스택의 최상단 데이터 불러오기
+- MOVE : 데이터를 옮기기
+- STORE : 메모리에 저장
+- LOAD(FETCH) : 메모리에서 CPU로 데이터 불러오기
+- PUSH : 스택에 데이터 저장
+- POP : 스택의 최상단 데이터 불러오기
 
  **산술/논리연산**
-	- ADD / SUBTRACT /  MULTIPLY / DIVIDE : 덧뺼곱나 해라
-	- INCREMENT / DECREMENT : 오퍼랜드에 1을 더해라 / 빼라
-	- AND / OR / NOT : and or not 연산실행
-	- COMPARE : 두개의 숫자 혹은 true/false를 비교
+- ADD / SUBTRACT /  MULTIPLY / DIVIDE : 덧뺼곱나 해라
+- INCREMENT / DECREMENT : 오퍼랜드에 1을 더해라 / 빼라
+- AND / OR / NOT : and or not 연산실행
+- COMPARE : 두개의 숫자 혹은 true/false를 비교
 
 **제어 흐름 변경**
-	- JUMP : 특정주소로 실행순서 옮기기
-	- CONDITIONAL JUMP :  조건에 부합할 때 특정 주소로 실행순서를 옮기기
-	- HALT : 프로그램 실행 멈추기
-	- CALL : 되돌아올 주소 저장하고 특정주소로 실행순서를 옮기기
-	- RETURN : CALL 호출 시, 저장했ㄷ너 주소로 돌아가기
+- JUMP : 특정주소로 실행순서 옮기기
+- CONDITIONAL JUMP :  조건에 부합할 때 특정 주소로 실행순서를 옮기기
+- HALT : 프로그램 실행 멈추기
+- CALL : 되돌아올 주소 저장하고 특정주소로 실행순서를 옮기기
+- RETURN : CALL 호출 시, 저장했ㄷ너 주소로 돌아가기
 
 **입출력 제어**
-	- READ(INPUT) : 특정 입출력 장치로부터 데이터 읽기
-	- WRITE(OUTPUT) : 특정 입출력 장치로 데이터 쓰기
-	- START IO : 입출력 장치 시작
-	- TEST IO : 입출력 장치의 상태 확인
+- READ(INPUT) : 특정 입출력 장치로부터 데이터 읽기
+- WRITE(OUTPUT) : 특정 입출력 장치로 데이터 쓰기
+- START IO : 입출력 장치 시작
+- TEST IO : 입출력 장치의 상태 확인
 
 
 
