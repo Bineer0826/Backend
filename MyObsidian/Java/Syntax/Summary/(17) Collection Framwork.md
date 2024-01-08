@@ -4,8 +4,8 @@ tags:
   - Syntax
   - 자바완전정복
 level: 개념
+Linked Project: "[[Do it! 자바 완전 정복]]"
 ---
-
 
 >다양하게 자바에서 사용할 수 있는 프레임워크를 알아보자
 
