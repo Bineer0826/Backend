@@ -35,13 +35,13 @@
 	3. 실린더 : 여러 겹의 플래터마다 트랙부분을 모아 연결한 논리적 단위
 
 
--  **데이터 저장**
+-  **데이터 저장***
   
 	연속된 정보 : 하나의 실린더 -> [[#^diskarm]] 디스크 암을 움직이지 않고 바로 데이터 접근!
 		-> 2개의 플래터를 이용한다면 각각의 앞, 뒷면에 데이터 저장
 
 
--  **데이터 접근 과정**
+-  데이터 접근 과정
   
 	1. 탐색 시간 : 접근하려는 데이터가 저장된 트랙까지 헤드를 이동시키는 의미
 	   
@@ -74,8 +74,9 @@
 
 
 ##### 다중 헤드 디스크 + 이동 헤드 디스크
-다중 헤드 디스크는 헤드가 트랙마다 있어서 헤드를 이동시키지 않아도 되는 디스크 -> 탐색시간이 0
-이동(고정) 헤드 디스크는 하나의 헤드로 트랙까지 이동해야 하는 디스크
+
+- 다중 헤드 디스크는 헤드가 트랙마다 있어서 헤드를 이동시키지 않아도 되는 디스크 -> 탐색시간이 0
+- 이동(고정) 헤드 디스크는 하나의 헤드로 트랙까지 이동해야 하는 디스크
 
 
 
@@ -157,6 +158,7 @@
 ---
 
 출처
+
 	[[#하드디스크(HDD)]] 그림 [[https://t1.daumcdn.net/cfile/tistory/99A3C44B5B3B06DD04]]
 	
 	[[#플래터의 데이터 저장]] 그림 https://t1.daumcdn.net/cfile/tistory/99F0904660AF0F0A1A?original
@@ -164,4 +166,5 @@
 	[[#종류]] 그림 https://news.skhynix.co.kr/hs-fs/hubfs/B_NewsRoom/Technology(362)/%EB%B0%98%EB%8F%84%EC%B2%B4(216)/2018/1226/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EC%A0%80%EC%9E%A5(Write)%ED%95%9C%EB%8B%A4%EB%8A%94%20%EC%9D%98%EB%AF%B8%EB%8A%94%20%EC%A7%80%EC%A0%95%EB%90%9C%20%EC%85%80%EC%9D%98%20storage%20%EC%98%81%EC%97%AD%EC%97%90%20%EC%A0%84%EC%9E%90%EB%A5%BC.jpg?width=945&name=%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EC%A0%80%EC%9E%A5(Write)%ED%95%9C%EB%8B%A4%EB%8A%94%20%EC%9D%98%EB%AF%B8%EB%8A%94%20%EC%A7%80%EC%A0%95%EB%90%9C%20%EC%85%80%EC%9D%98%20storage%20%EC%98%81%EC%97%AD%EC%97%90%20%EC%A0%84%EC%9E%90%EB%A5%BC.jpg
 
 참고자료
-	하드 디스크 작동 영상 : https://www.youtube.com/watch?v=ojGvHDjHPb4
+
+	하드 디스크 작동 영상  https://www.youtube.com/watch?v=ojGvHDjHPb4
