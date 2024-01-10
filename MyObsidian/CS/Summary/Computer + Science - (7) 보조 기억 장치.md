@@ -2,7 +2,12 @@
 
 
 > 보조기억장치는 프로그램 종료 후에도 데이터를 저장하는 장치라는 것을 앞에서 배웠는데, 자세하게 하드디스크와 플래시 메모리를 알아보자.
+<<<<<<< HEAD
 
+=======
+<br>
+<br>
+>>>>>>> 0c09740fd86d1b7e2f05fea71b1277083af0085c
 
 ## 하드디스크(HDD)
 : 자기적인 방식으로 데이터를 저장하는 보조기억 장치 = 자기 디스크(magnetic disk)
@@ -24,6 +29,7 @@
 
 
 #### 플래터의 데이터 저장
+<<<<<<< HEAD
 
 
 -  **플래터 구분요소**
@@ -32,6 +38,15 @@
 	   
 	2.  섹터 : 부채꼴 하나를 의미 -> 하드디스크의 가장 작은 단위
 	   
+=======
+<br>
+- **플래터 구분요소**
+
+	1.  트랙 :  플래터를 피자처럼 나누었을 때, 부채꼴의 호의 길이 = 달리기 트랙
+
+	2.  섹터 : 부채꼴 하나를 의미 -> 하드디스크의 가장 작은 단위
+
+>>>>>>> 0c09740fd86d1b7e2f05fea71b1277083af0085c
 	3. 실린더 : 여러 겹의 플래터마다 트랙부분을 모아 연결한 논리적 단위
 
 
@@ -166,5 +181,9 @@
 	[[#종류]] 그림 https://news.skhynix.co.kr/hs-fs/hubfs/B_NewsRoom/Technology(362)/%EB%B0%98%EB%8F%84%EC%B2%B4(216)/2018/1226/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EC%A0%80%EC%9E%A5(Write)%ED%95%9C%EB%8B%A4%EB%8A%94%20%EC%9D%98%EB%AF%B8%EB%8A%94%20%EC%A7%80%EC%A0%95%EB%90%9C%20%EC%85%80%EC%9D%98%20storage%20%EC%98%81%EC%97%AD%EC%97%90%20%EC%A0%84%EC%9E%90%EB%A5%BC.jpg?width=945&name=%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EC%A0%80%EC%9E%A5(Write)%ED%95%9C%EB%8B%A4%EB%8A%94%20%EC%9D%98%EB%AF%B8%EB%8A%94%20%EC%A7%80%EC%A0%95%EB%90%9C%20%EC%85%80%EC%9D%98%20storage%20%EC%98%81%EC%97%AD%EC%97%90%20%EC%A0%84%EC%9E%90%EB%A5%BC.jpg
 
 참고자료
+<<<<<<< HEAD
 
 	하드 디스크 작동 영상  https://www.youtube.com/watch?v=ojGvHDjHPb4
+=======
+	하드 디스크 작동 영상 : https://www.youtube.com/watch?v=ojGvHDjHPb4
+>>>>>>> 0c09740fd86d1b7e2f05fea71b1277083af0085c
