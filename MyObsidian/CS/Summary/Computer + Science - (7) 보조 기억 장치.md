@@ -29,7 +29,7 @@
 
 
 #### 플래터의 데이터 저장
-<<<<<<< HEAD
+
 
 
 -  **플래터 구분요소**
@@ -46,7 +46,6 @@
 
 	2.  섹터 : 부채꼴 하나를 의미 -> 하드디스크의 가장 작은 단위
 
->>>>>>> 0c09740fd86d1b7e2f05fea71b1277083af0085c
 	3. 실린더 : 여러 겹의 플래터마다 트랙부분을 모아 연결한 논리적 단위
 
 
@@ -162,6 +161,15 @@
 	   ❗️하드디스크와 달리, 플래시는 데이터가 존재하면 새 데이터 덮어쓰기 불가능
 	   
 3. Invalid : 쓰레기값이라 부르는 유효하지 않는 데이터를 가지고 있는 상태
+
+
+
+
+---
+## RAID
+
+:ㅁㄴㅇㄹㅁㄴㅇㄹ
+
    
    
    
@@ -181,9 +189,7 @@
 	[[#종류]] 그림 https://news.skhynix.co.kr/hs-fs/hubfs/B_NewsRoom/Technology(362)/%EB%B0%98%EB%8F%84%EC%B2%B4(216)/2018/1226/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EC%A0%80%EC%9E%A5(Write)%ED%95%9C%EB%8B%A4%EB%8A%94%20%EC%9D%98%EB%AF%B8%EB%8A%94%20%EC%A7%80%EC%A0%95%EB%90%9C%20%EC%85%80%EC%9D%98%20storage%20%EC%98%81%EC%97%AD%EC%97%90%20%EC%A0%84%EC%9E%90%EB%A5%BC.jpg?width=945&name=%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EC%A0%80%EC%9E%A5(Write)%ED%95%9C%EB%8B%A4%EB%8A%94%20%EC%9D%98%EB%AF%B8%EB%8A%94%20%EC%A7%80%EC%A0%95%EB%90%9C%20%EC%85%80%EC%9D%98%20storage%20%EC%98%81%EC%97%AD%EC%97%90%20%EC%A0%84%EC%9E%90%EB%A5%BC.jpg
 
 참고자료
-<<<<<<< HEAD
 
 	하드 디스크 작동 영상  https://www.youtube.com/watch?v=ojGvHDjHPb4
-=======
 	하드 디스크 작동 영상 : https://www.youtube.com/watch?v=ojGvHDjHPb4
->>>>>>> 0c09740fd86d1b7e2f05fea71b1277083af0085c
+
