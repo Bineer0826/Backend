@@ -535,6 +535,8 @@ public static void main(String[] args) {
 > 앞에서 임포트와 더불어 bean은 많이 연관되어 있고 서로서로 종속성을 갖는다. xml을 사용할 때는 ,컴파일러를 포함하지 않아서 종속성에 대해서 문제가 생기지 않고 컨테이너 초기화 하더라도 스프링을 이용하면 된다
 > 하지만 @Configuration 클래스를 사용할 때, java 컴파일러는 다른 bean에 대한 참조가 자바 구문이어야 한다는 점에서 제약이 생긴다
 
+(사실 어떤 문제점이 생기는 건지 다가오지 않는다 이부분은 다시 읽어봐야할듯)
+
 이를 해결하기 위해서, [[#Bean 사이의 종속성 주입]] 에서 매개변수를 가지면 된다
 
 ```java
@@ -574,6 +576,76 @@ public static void main(String[] args) {
 }
 ```
 
+- 하나의 bean에 다른 bean 연결하기
+```java
+@Configuration
+public class ServiceConfig {
+
+	@Autowired
+	private AccountRepository accountRepository; //리포지토리와 연결
+
+	@Bean //빈 정의와 등록
+	public TransferService transferService() {
+		return new TransferServiceImpl(accountRepository); // 매개변수 리포지토리로
+	}
+}
+
+@Configuration
+public class RepositoryConfig { 
+
+	private final DataSource dataSource;
+
+	public RepositoryConfig(DataSource dataSource) { //리포지토리인데 ,data를 기반
+		this.dataSource = dataSource;
+	}
+
+	@Bean
+	public AccountRepository accountRepository() { //리포지토리 생성 data reSource연결
+		return new JdbcAccountRepository(dataSource);
+	}
+}
+
+@Configuration
+@Import({ServiceConfig.class, RepositoryConfig.class}) // 두 클래스 가져오기
+public class SystemTestConfig { // 클래스 생성
+
+	@Bean
+	public DataSource dataSource() { //dataSource 정의
+		// return new DataSource
+	}
+}
+
+public static void main(String[] args) {
+	ApplicationContext ctx = new AnnotationConfigApplicationContext(SystemTestConfig.class); // 테스트롤 객체 생성해도 dataSource 필요하고 datasource는 레파지토리와 어카운트 레파지토리 모두 끌려온다
+	// everything wires up across configuration classes...
+	TransferService transferService = ctx.getBean(TransferService.class); //이 클래스에 서비스 클래스에 대한 객체 등록
+	transferService.transfer(100.00, "A123", "C456");
+}
+```
+
+
+
 
 ### @Configuration 클래스 또는 @Bean 메소드를 조건부로 포함
+`@Profile` 은 `@Conditional`이라는 주석을 더 유연하게 사용해서 구현한다
+`@Conditionoal`  :  빈이 등록되기 전에 org.springframework.context.annotation.Condition를 먼저 참조해야한다
+
+- boolean 값을 반환하는 `match(...)를 사용한다
+```java
+@Override
+public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) { // 매치 구문을 사용했다,
+	// Read the @Profile annotation attributes
+	MultiValueMap<String, Object> attrs = metadata.getAllAnnotationAttributes(Profile.class.getName());
+	if (attrs != null) {
+		for (Object value : attrs.get("value")) {
+			if (context.getEnvironment().acceptsProfiles(((String[]) value))) {
+				return true; // 불리언 값으로 반환
+			}
+		}
+		return false; // 불리언 값으로 반환
+	}
+	return true; // 불리언 값으로 반환
+}
+```
+
 ### Java 와 XML 구성 결합
