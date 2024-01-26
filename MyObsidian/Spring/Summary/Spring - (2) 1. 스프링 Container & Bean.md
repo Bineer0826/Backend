@@ -237,7 +237,7 @@ public class DefaultServiceLocator { //사용하려는 클래스를 이용할 �
 <br>
 <br>
 
-##### 1. 빈 설정하기
+#### 1. 빈 설정하기
 @Bean을 이용해서 ApplicationContext의 정의 기능을 이용하고 메서드와 이름이 동일하다
 ```java
 @Configuration
@@ -264,7 +264,7 @@ XML으로 나타내면
 <br>
 <br>
 
-##### 2. 빈 의존성
+#### 2. 빈 의존성
 : 반환할 메서드의 매개변수를 이용하면 종속성을 구체화 할 수 있다
 ```java
 @Configuration
@@ -281,7 +281,7 @@ public class AppConfig {
 <br>
 <br>
 
-##### 3. 수명주기에 따른 콜백
+#### 3. 수명주기에 따른 콜백
 : 객체가 언제 딱 호출되고 사라질 것인지의 수명주기를  앞서서 컨테이너가 지원한다고 배웠다
 보통 일반 수명주기를 알려주고 Spring의 라이프사이클도 알려준다
 
@@ -335,7 +335,7 @@ public class AppConfig {
 <br>
 <br>
 
-##### 3. 범위 지정
+#### 3. 범위 지정
 1) `@Scope` 이용 : 기본범위이지만 싱글톤을 이용해서 범위를 재정의할 수 있다
    
 ```java
@@ -370,7 +370,7 @@ public Service userService() {
 ```
 
 
-##### 4. 설명문 작성
+#### 4. 설명문 작성
 `@Bean` 이후에 `@Description("_하고싶은 말_")` 을 이용해서  설명을 추가할 수 있다
 
 ```java
@@ -385,10 +385,38 @@ public class AppConfig {
 }
 ```
 
-
-
 <br>
 <br>
+<br>
+<br>
+
+##
+
+### Bean 정의 상속
+
+> 앞서 배운 것처럼 생성자, 속성 값, 메소드, 정적 메소드등  객체 내에는 많은 정보가 포함 되어있다. 클래스 상속처럼 빈 하위 상속도 상위 빈의 데이터를 상속 받는다
+> 템플릿처럼 상위 / 하위 bean 정의를 하용하면 입력 작업을 줄임
+<br>
+: 인터페이스로 작업하는 경우 하위 빈은 `ChildBeanDefinition` .
+<br>
+xml에서는... 
+
+```xml
+<bean id="inheritedTestBean" abstract="true"
+		class="org.springframework.beans.TestBean">
+	<property name="name" value="parent"/>
+	<property name="age" value="1"/>
+</bean>
+
+<bean id="inheritsWithDifferentClass"
+		class="org.springframework.beans.DerivedTestBean"
+		parent="inheritedTestBean" init-method="initialize">
+	<property name="name" value="override"/>
+	<!-- the age property value of 1 will be inherited from parent -->
+</bean>
+```
+
+하위 bean은 값, 메서드, 범위, 생성자 인수 재정의를 당연히 재정의 하지만, ==나머지는 하위정의(종속성, 자동연결모드,싱글톤 및 지연초기화)에서 가져옮==
 <br>
 <br>
 

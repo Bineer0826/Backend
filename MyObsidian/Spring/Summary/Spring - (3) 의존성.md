@@ -40,6 +40,7 @@ public class SimpleMovieLister {
 #### 생성자 일치 확인(인수 해결)
 : 정말로 종속관계 있는 것들이 생성자로 사용할 수 있는지 확인하려면 유형을 이용하면 된다
 
+- 타입을 정하지 않은 경우
 ```java
 package x.y;
 
@@ -67,15 +68,79 @@ XML 에서는 `<constructor-arg/>`를 이용한다
 </beans>
 
 ```
+<br>
+
+아래의 예시는 두 인수가 같지 않게 분리하는 방법들이다
+
+- 타입을 정한 경우 : `type`
+```java
+package examples;
+
+public class ExampleBean {
+
+	// Number of years to calculate the Ultimate Answer
+	private final int years;
+
+	// The Answer to Life, the Universe, and Everything
+	private final String ultimateAnswer;
+
+	public ExampleBean(int years, String ultimateAnswer) {
+		this.years = years;
+		this.ultimateAnswer = ultimateAnswer;
+	}
+}
+
+```
+
+xml에서 동일하게 나와있는 것을 볼 수 있다.
+```xml
+<bean id="exampleBean" class="examples.ExampleBean">
+	<constructor-arg type="int" value="7500000"/> //int타입, 값지정
+	<constructor-arg type="java.lang.String" value="42"/> //String
+</bean>
+```
+<br>
+
+- 타입을 정한 경우 : `index`
+```xml
+<bean id="exampleBean" class="examples.ExampleBean">
+	<constructor-arg index="0" value="7500000"/> //0번째
+	<constructor-arg index="1" value="42"/> // 1번째
+</bean>
+```
+
+<br>
+
+- 매개변수로 정하기 : 디버그 플래그를 사용하는 방법은 추후에...
+```xml
+<bean id="exampleBean" class="examples.ExampleBean">
+	<constructor-arg name="years" value="7500000"/>
+	<constructor-arg name="ultimateAnswer" value="42"/>
+</bean>
+```
+이러한 방법을 사용하면 동일한 유형의 두 인수를 갖는 모호성을 해결
 
 
-
-
-
-
-
+<br>
+<br>
 
 ### Setter 기반 주입
+: static 메서드를 호출한 수 빈에서 setter메소드를 호출한다
+
+```java
+public class SimpleMovieLister {
+
+	// the SimpleMovieLister has a dependency on the MovieFinder
+	private MovieFinder movieFinder;
+
+	// a setter method so that the Spring container can inject a MovieFinder
+	public void setMovieFinder(MovieFinder movieFinder) {
+		this.movieFinder = movieFinder;
+	}
+
+	// business logic that actually uses the injected MovieFinder is omitted...
+}
+```
 
 
 ## 세부 종속성 및 구성
