@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "4678587f0e52f45a",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0221cdd547e157d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "22e39f414f5c98af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spaces/plan/2024-01-09.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "000af3b362df3e1f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DataBase/SQL/SQL - (1) DataBase & MySQL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dd116b4584912e54",
+    "type": "split",
+    "children": [
+      {
+        "id": "bdf839ca0d7936f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a06144bbe4cee9e7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "285ad3c1a3c8769a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#todo",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f30853b1302dc46f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "cfce1cb6d43bb493",
+    "type": "split",
+    "children": [
+      {
+        "id": "57b3d4f3b857a088",
+        "type": "tabs",
+        "dimension": 29.276895943562607,
+        "children": [
+          {
+            "id": "76f2749b2db80eb9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "DataBase/SQL/SQL - (1) DataBase & MySQL.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6b9d45a365b3467b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "DataBase/SQL/SQL - (1) DataBase & MySQL.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a78c6836bea393e8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "387e9784f23e7a7e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "DataBase/SQL/SQL - (1) DataBase & MySQL.md"
+              }
+            }
+          },
+          {
+            "id": "a5ae3511a01f84b7",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "61593e80628280da",
+        "type": "tabs",
+        "dimension": 70.72310405643739,
+        "children": [
+          {
+            "id": "485de2ae371a78aa",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 302.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-day-planner:Timeline": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "000af3b362df3e1f",
+  "lastOpenFiles": [
+    "CS/Summary/Computer + Science - (9) 운영체제.md",
+    "DataBase/SQL/SQL - (1) DataBase & MySQL.md",
+    "DataBase/SQL",
+    "DataBase",
+    "Java/untitled/out/production/untitled/Main.class",
+    "Spring/Summary/Spring - (2) 2. Java 기반 컨테이너 구성.md",
+    "Spring/Summary/Spring - (2) 1. 스프링 Container & Bean.md",
+    "Spring/Summary/Spring - (2) 3. Con.md",
+    "Spring/Summary/Spring - (3) 의존성.md",
+    "Spring/Summary/Spring - (8) Servlet Stack web.md",
+    "Spring/Summary/Spring - (4) Bean.md",
+    "무제 파일.canvas",
+    "Spring/Summary/Pre Spring - (0) 웹 애플리케이션 필수지식.md",
+    "Spring/Summary/Pre Spring - (1) 스프링 프레임워크의 핵심기능 요약.md",
+    "CS/Summary/Computer + Science - (8) 입출력장치.md",
+    "Spring/Summary",
+    "Spring",
+    "CS/Summary/Computer + Science - (7) 보조 기억 장치.md",
+    "Spaces/plan/2024-01-09.md",
+    "Spaces/image/플래시메모리타입.png",
+    "Spaces/linked_image/image.md",
+    "Spaces/linked_image/Pasted.md",
+    "Spaces/image/Pasted image 20240109164624.png",
+    "Spaces/image/Pasted image 20240110192840.png",
+    "Spaces/image/Pasted image 20240110193501.png",
+    "Spaces/linked_image/Pasted image 20240110211046.png",
+    "Spaces/linked_image/Pasted image 20240110193032.png",
+    "Spaces/linked_image/Pasted image 20240110192924.png",
+    "Spaces/linked_image/Pasted image 20240110192827.png",
+    "Spaces/image/Pasted image 20240110175049.png",
+    "Spaces/image",
+    "CS/Summary/Computer + Science - (6) 메모리와 캐시 메모리.md",
+    "CS/Summary/Computer + Science - (3) 명령어.md",
+    "2024-01-09.md",
+    "Spaces/plan/무제 파일.md",
+    "Java/Syntax/Summary/(16) Generic.md",
+    "Spaces/plan",
+    "Java/Syntax/Summary/(17) Collection Framwork.md"
+  ]
+}
