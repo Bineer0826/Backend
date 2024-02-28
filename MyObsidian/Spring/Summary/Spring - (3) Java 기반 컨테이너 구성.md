@@ -149,7 +149,7 @@ ApplicationContext 메서드를 이용해서 지정된 유형으로 bean을 등�
 ==`@Bean("__")` ""안에 값으로 이름의 커스터마이징 가능하고, `,`로 `name` 구분==
 
 ❗️ ApplicationContext는 어플리케이션의 구성을 제공하는 중앙 인터페이스이다.
-	[[Spring - (2) 1. 스프링 Container & Bean]] 참고
+	[[Spring - (1) 스프링 Container & Bean]] 참고
 	정의읽기, 검색기능이 있다
 
 	ApplicationContext 메서드
