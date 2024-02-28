@@ -19,7 +19,7 @@
 ==즉, 스프링을 사용하면서 요청에 대한 매핑, 해결, 예외처리 등 필요한 위임 구성요소를 검색하는게 DispatcherServlet이라고 볼 수 있다.==
 
 <br>
-Servlet 컨테이너에 의해 자동으로 감지(매핑)되는 DS를 등록하고 초기화하는 에이다.
+Servlet 컨테이너에 의해 자동으로 감지(매핑)되는 DS를 등록하고 초기화하는 예이다.
 ```java
 public class MyWebApplicationInitializer implements WebApplicationInitializer {
 
@@ -76,7 +76,7 @@ xml에서는....
 ### Context 계층
 #### WebApplicationContext
 :  앞에서 배운  ApplicationContext를 확장한 것 + 서블릿 기반의 웹 애플리케이션 활용
-[[Spring - (2) 2. Java 기반 컨테이너 구성]] 참고
+[[Spring - (3) Java 기반 컨테이너 구성]] 참고
 <br>
 
 - ApplicationContext 기능
